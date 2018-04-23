@@ -7,12 +7,11 @@ describe('Account', function() {
     account = new Account();
   });
 
+  it('is an instance of Account', function() {
+    expect(account).toEqual(jasmine.any(Account))
+  });
+
   describe('When account is initialised', function() {
-
-    it('is an instance of Account', function() {
-      expect(account).toEqual(jasmine.any(Account))
-    });
-
 
     it('balance is equal to zero', function() {
       expect(account.balance).toEqual(0);
