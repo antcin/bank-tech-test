@@ -26,5 +26,12 @@ describe('Account', function() {
     });
   });
 
+  describe('#withdraw', function() {
+    it('decreases the bank balance', function() {
+      account.withdraw(50)
+      expect(account.balance).toEqual(-50)
+    });
+  });
+
 
 });
