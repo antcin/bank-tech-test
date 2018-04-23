@@ -1,5 +1,9 @@
 'use strict';
 
-function Account() {
-  this.balance = 0
-}
+function Account(balance = 0) {
+  this.balance = balance;
+};
+
+Account.prototype.deposit = function(amount) {
+  this.balance += amount;
+};
