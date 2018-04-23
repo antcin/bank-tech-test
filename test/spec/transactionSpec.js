@@ -9,7 +9,7 @@ describe('Transaction', function() {
   });
 
   it('is an instance of Transaction', function(){
-    expect(account).toEqual(jasmine.any(Transaction))
+    expect(transaction).toEqual(jasmine.any(Transaction))
   });
 
   it('has an amount property', function() {
