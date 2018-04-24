@@ -1,0 +1,26 @@
+{
+  "name": "bank-tech-test",
+  "version": "1.0.0",
+  "description": "Tech test that simulates bank transactions",
+  "main": "index.js",
+  "dependencies": {
+    "jasmine": "^3.1.0"
+  },
+  "devDependencies": {
+    "grunt-template-jasmine-istanbul": "^0.5.0",
+    "nyc": "^11.7.1"
+  },
+  "scripts": {
+    "test": "nyc jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antcin/bank-tech-test.git"
+  },
+  "author": "Antonio Ciniglio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antcin/bank-tech-test/issues"
+  },
+  "homepage": "https://github.com/antcin/bank-tech-test#readme"
+}
