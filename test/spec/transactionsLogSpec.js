@@ -18,8 +18,8 @@ describe('TransactionsLog', function() {
 
   describe('#addTransaction', function(){
     it('adds a transaction to the log', function(){
-      transactionsLog.addTransaction(third_transaction)
-      expect(transactionsLog.transactions).toContain(third_transaction)
+      transactionsLog.addTransaction(thirdTransaction)
+      expect(transactionsLog.transactions).toContain(thirdTransaction)
     });
   });
 });

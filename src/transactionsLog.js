@@ -9,6 +9,5 @@
     this.transactions.push(transaction);
   };
 
-
   exports.TransactionsLog = TransactionsLog;
-})(this)
+})(this);

@@ -1,10 +1,12 @@
 var today;
 var yesterday;
 var dayBeforeYesterday;
-var first_transaction;
-var second_transaction;
-var third_transaction;
+var firstTransaction;
+var secondTransaction;
+var thirdTransaction;
 var transactions;
+var transactionsLog;
+var statement;
 
 
 beforeEach(function() {
@@ -15,10 +17,13 @@ beforeEach(function() {
   jasmine.clock().install();
   jasmine.clock().mockDate(today);
 
-  first_transaction = new Transaction(100.00, 100.00, dayBeforeYesterday);
-  second_transaction = new Transaction(50.00, 150.00, yesterday);
-  third_transaction = new Transaction(20.00, 170.00, today);
-  transactions = [first_transaction, second_transaction];
+  firstTransaction = new Transaction(100.00, 100.00, dayBeforeYesterday);
+  secondTransaction = new Transaction(50.00, 150.00, yesterday);
+  thirdTransaction = new Transaction(20.00, 170.00, today);
+  transactions = [firstTransaction, secondTransaction];
+
+  transactionsLog = new TransactionsLog(transactions);
+  statement = new Statement(transactionsLog);
 });
 
 afterEach(function () {
