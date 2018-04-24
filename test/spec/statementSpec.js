@@ -17,8 +17,29 @@ describe('Statement', function() {
     });
 
     it('adds transaction to the statement log', function() {
-      statement.addTransaction(100);
+      statement.addTransaction(100.00);
       expect(statement.log.addTransaction).toHaveBeenCalled();
+    });
+  });
+
+  describe('#show', function() {
+    var headings;
+
+    beforeEach(function() {
+      headings = 'date || credit || debit || balance'
+    });
+
+    it('shows the headings', function() {
+      expect(statement.show()).toContain(headings);
+    });
+
+    it('shows the date in the right format', function() {
+      expect(statement.show()).toContain('22/04/2018');
+    });
+
+    it('shows the right transaction amount', function() {
+      statement.addTransaction(thirdTransaction);
+      expect(statement.show()).toContain(20.00);
     });
   });
 });
