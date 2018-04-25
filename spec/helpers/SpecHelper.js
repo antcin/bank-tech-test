@@ -4,6 +4,7 @@ var dayBeforeYesterday;
 var firstTransaction;
 var secondTransaction;
 var thirdTransaction;
+var fourthTransaction;
 var transactions;
 var transactionsLog;
 var statement;
@@ -21,6 +22,7 @@ beforeEach(function() {
   firstTransaction = new Transaction(100.00, 100.00, dayBeforeYesterday);
   secondTransaction = new Transaction(50.00, 150.00, yesterday);
   thirdTransaction = new Transaction(20.00, 170.00, today);
+  fourthTransaction = new Transaction(-10.00, 160.00, today);
 
   transactions = [firstTransaction, secondTransaction];
   transactionsLog = new TransactionsLog(transactions);

@@ -42,11 +42,20 @@ describe('Account', function() {
     });
 
     it('decreases the bank balance', function() {
+      account.deposit(100.00)
       account.withdraw(50.00)
-      expect(account.balance).toEqual(-50.00)
+      expect(account.balance).toEqual(50.00)
+    });
+
+    it('throws an error when not enough money available', function() {
+      var withdrawal = function() {
+        account.withdraw(1000000000);
+      };
+      expect(withdrawal).toThrow('Error - not enough money in your account.');
     });
 
     it('adds withdraw transaction to statement', function() {
+      account.deposit(100.00)
       account.withdraw(50.00)
       expect(account.statement.addTransaction).toHaveBeenCalled();
     });

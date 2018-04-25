@@ -37,9 +37,14 @@ describe('Statement', function() {
       expect(statement.show()).toContain('22/04/2018');
     });
 
-    it('shows the right transaction amount', function() {
+    it('shows the right transaction amount when depositing money', function() {
       statement.addTransaction(thirdTransaction);
       expect(statement.show()).toContain(20.00);
+    });
+
+    it('shows the right transaction amount when withdrawing', function() {
+      statement.addTransaction(fourthTransaction);
+      expect(statement.show()).toContain(10.00);
     });
   });
 });
