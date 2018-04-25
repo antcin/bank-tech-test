@@ -1,4 +1,4 @@
-var Account = require('./src/Account');
+var Account = require('./src/account.js');
 
 var account = new Account();
 account.deposit(5000);

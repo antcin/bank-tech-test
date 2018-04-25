@@ -11,7 +11,7 @@
 
   Statement.prototype.show = function() {
     var print = 'date || credit || debit || balance ' + '\n';
-    this.log.transactions.forEach(function(transaction) {
+    this.log.transactions.reverse().forEach(function(transaction) {
       print += transaction.date.toLocaleDateString();
       print += ' || '
         if (transaction.amount > 0)
@@ -19,7 +19,6 @@
         else
           print += ' '
         print += ' || '
-
 
         if (transaction.amount < 0)
           print += transaction.amount.toFixed(2)

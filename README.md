@@ -6,6 +6,19 @@ Summary
 
 A small app that allows bank customers to print their account statements.
 
+## Technologies used
+- Back-end
+  - JavaScript
+- Testing
+ - Jasmine
+ - Istanbul (for test coverage)
+
+## Prerequisites
+
+## Approach
+
+## Reflections
+
 
 User stories
 ----
@@ -33,11 +46,3 @@ As a bank customer,
 So that I can keep track of my financial activities,
 I would like to be able to print a bank statement.
 ```
-
-
-
-
-Functionalities
-----
-
-- The customer  

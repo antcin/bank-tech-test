@@ -1,5 +1,4 @@
 'use strict';
-
 (function(exports){
   function TransactionsLog(transactions = []){
     this.transactions = transactions;

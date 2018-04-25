@@ -1,5 +1,6 @@
 'use strict';
 
+
 describe('Account', function() {
 
   it('is an instance of Account', function() {
@@ -8,7 +9,7 @@ describe('Account', function() {
 
   it('has a statement property', function() {
     expect(account.statement).toBe(statement)
-  })
+  });
 
   describe('When account is initialised', function() {
 
@@ -31,7 +32,7 @@ describe('Account', function() {
     it('adds deposit transaction to statement', function() {
       account.deposit(100.00);
       expect(account.statement.addTransaction).toHaveBeenCalled();
-    })
+    });
   });
 
   describe('#withdraw', function() {
@@ -56,6 +57,5 @@ describe('Account', function() {
     it('returns a string', function() {
       expect(typeof account.displayStatement()).toBe('string');
     });
-    
   });
 });

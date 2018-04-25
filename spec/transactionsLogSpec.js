@@ -2,12 +2,6 @@
 
 describe('TransactionsLog', function() {
 
-  var transactionsLog;
-
-  beforeEach(function(){
-    transactionsLog = new TransactionsLog(transactions);
-  });
-
   it('is an instance of TransactionsLog', function() {
     expect(transactionsLog).toEqual(jasmine.any(TransactionsLog))
   });

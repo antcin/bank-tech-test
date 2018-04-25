@@ -22,5 +22,5 @@ describe('Transaction', function() {
 
   it('has a date property', function() {
     expect(transaction.date).toBe(today)
-  })
+  });
 });

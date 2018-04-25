@@ -4,14 +4,21 @@
   "description": "Tech test that simulates bank transactions",
   "main": "index.js",
   "dependencies": {
-    "jasmine": "^3.1.0"
+    "jasmine": "^3.1.0",
+    "requirejs": "^2.3.5"
   },
   "devDependencies": {
-    "grunt-template-jasmine-istanbul": "^0.5.0",
+    "jasmine-core": "^3.1.0",
+    "karma": "^2.0.2",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^1.1.1",
+    "karma-requirejs": "^1.1.0",
+    "karma-spec-reporter": "0.0.32",
     "nyc": "^11.7.1"
   },
   "scripts": {
-    "test": "nyc jasmine"
+    "test": "karma start karma.conf.js"
   },
   "repository": {
     "type": "git",
