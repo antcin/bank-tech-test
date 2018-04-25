@@ -4,7 +4,7 @@ Week 10 - Tech tests
 Summary
 ----
 
-A small app that allows bank customers to deposit and withdraw money; and print their account statement.
+A small app that allows bank customers to deposit and withdraw money from their account, along with printing a transactions statement.
 
 ## Technologies used
 - Back-end
