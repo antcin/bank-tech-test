@@ -18,7 +18,7 @@
   };
 
   Account.prototype.displayStatement = function() {
-    console.log(this.statement.show());
+    return this.statement.show();
   };
 
   exports.Account = Account;

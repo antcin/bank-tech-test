@@ -53,13 +53,9 @@ describe('Account', function() {
 
   describe('#displayStatement', function() {
 
-    beforeEach(function(){
-      spyOn(console, 'log');
-    });
-
     it('returns a string', function() {
-      account.displayStatement();
-      expect(console.log).toHaveBeenCalled();
+      expect(typeof account.displayStatement()).toBe('string');
     });
+    
   });
 });
