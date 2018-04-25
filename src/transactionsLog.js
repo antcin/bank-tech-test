@@ -1,12 +1,12 @@
 'use strict';
-(function(exports){
-  function TransactionsLog(transactions = []){
-    this.transactions = transactions;
-  };
+(function (exports) {
+  function TransactionsLog (transactions = []) {
+    this.transactions = transactions
+  }
 
-  TransactionsLog.prototype.addTransaction = function(transaction) {
-    this.transactions.push(transaction);
-  };
+  TransactionsLog.prototype.addTransaction = function (transaction) {
+    this.transactions.push(transaction)
+  }
 
-  exports.TransactionsLog = TransactionsLog;
-})(this);
+  exports.TransactionsLog = TransactionsLog
+})(this)

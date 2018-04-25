@@ -7,7 +7,8 @@ module.exports = function(config) {
 
     files: [
       'src/*.js',
-      'spec/*.js',
+      'spec/units/*.js',
+      'spec/feature/*.js',
       'spec/helpers/SpecHelper.js'
     ],
 
