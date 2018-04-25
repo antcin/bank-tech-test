@@ -10,9 +10,9 @@ A small app that allows bank customers to deposit and withdraw money; and print 
 - Back-end
   - JavaScript
 - Testing
- - Jasmine
- - Karma
- - Istanbul (for test coverage)
+  - Jasmine
+  - Karma
+  - Istanbul (for test coverage)
 - NPM
 
 ## Instructions to interact with the code
@@ -37,12 +37,6 @@ console.log(account.displayStatement()) // displays the statement
 account.withdraw(500000) // would throw a 'not enough money error'
 ```
 
-
-
-
-
-
-
 #### Testing
 
 - Using Jasmine
@@ -51,7 +45,7 @@ account.withdraw(500000) // would throw a 'not enough money error'
   open spec/SpecRunner.html
  ```
 - Using Karma
-  ```sh
+  ```javascript
   npm test
   ```
 ##### Extract from `accountSpec.js` [testing Account#deposit]
@@ -76,8 +70,8 @@ describe('#deposit', function () {
 ## Approach
 I decided to approach this task by applying several concepts learnt during the first ten weeks at Makers:
 
-- [User stories](#User stories): in order to have a better understanding of the task, I converted the [_Acceptance criteria_](**Acceptance criteria**) into user stories.
-- [Domain modelling](#Domain modelling): I spent quite a bit of time drawing diagrams on paper, with the aim of having a relatively clear idea of how the different components of the program would interact.
+- [User stories](#User-stories): in order to have a better understanding of the task, I converted the [_Acceptance criteria_](**Acceptance-criteria**) into user stories.
+- [Domain modelling](#Domain-modelling): I spent quite a bit of time drawing diagrams on paper, with the aim of having a relatively clear idea of how the different components of the program would interact.
 - TDD: once I felt comfortable with my planning, I moved on to developing the app in a test-driven way, making sure that every component was fully tested before being implemented.
 - SRP and Dependency injection: I tried my best to ensure that each class had a single responsibility and was independent from the other.
 - DRY: where possible, I tried to avoid repetitions.
