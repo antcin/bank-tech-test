@@ -84,7 +84,7 @@ Testing was probably the main challenge: I learnt a lot about the differences be
 
 With regards to the code, I am overall pleased with what I achieved, especially with the effort I put in using dependency injection. I am not really happy with the method `Statement#show`; I believe there are neater ways of implementing that (perhaps creating a `Date` class?).
 
-I wasn't able to run the acceptance script in `node` (presumably because of the way `Node.js` handles `require`?) [`TypeError: Account is not a constructor`]. I will have to do more research on this topic.
+I wasn't able to run the acceptance script in `node`. [`TypeError: Account is not a constructor`]. I will have to do more research on this topic.
 
 ## User stories
 
